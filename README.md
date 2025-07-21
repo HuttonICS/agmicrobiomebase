@@ -5,29 +5,13 @@
 ## Agmicrobiomebase
 
   
-
-This repository contains the scripts to process the fastq sequence files from the 16S and ITS amplicon Illumina sequencing and for the metagenomic Illumina sequencing for the UK Crop Microbiome Cryobank Project.
-
-
-The UK Crop Microbiome Cryobank integrates genomic (DNA) data with a cryobank collection of samples for the soil microbiomes of the UK major crop plant systems.
-
-For this project, the microbiomes are from the rhizosphere (the soil surrounding the crop plant roots) and from bulk soil (soil outside the rhizosphere).
-
+This repository contains the scripts to process the fastq sequence files from the 16S and ITS amplicon Illumina sequencing for the UK Crop Microbiome Cryobank Project (UKCMCB). The UKCMCB integrates genomic (DNA) data with a cryobank collection of samples for the soil microbiomes of the UK major crop plant systems. For this project, the microbiomes are from the rhizosphere (the soil surrounding the crop plant roots) and from bulk soil (soil outside the rhizosphere).
 The Cryobank provides a facility for researchers to source data and samples, including cryo-preserved microbial material and genomic and metagenomic sequences from different soil microbiome environments.
-
-  
-
 The project has sequenced soil microbiomes from 6 different UK crops grown in 9 different soil types (within a pot experiment) from across the United Kingdom.
-
-  
-
 The data catalogue for this project can be accessed at [https://agmicrobiomebase.org/](https://agmicrobiomebase.org/).
-
 The catalogue links the raw sequence data files which have been submitted to the European Nucleotide Archive (ENA) with soil metadata.
 
-  
-
-This repository contains procedural information and scripts for the analysis of Amplicon sequence fastq files to derive amplicon sequence variant taxonomies using qiime2 and the corresponding packages.
+This repository contains information and scripts for the analysis of amplicon sequence fastq files to derive amplicon sequence variant (ASV) taxonomies using qiime2 and associated packages.
 
 #### 1. Analysis of **16S Amplicon** sequence fastq files to derive amplicon sequence variant taxonomies using qiime2
 
@@ -59,7 +43,6 @@ This repository contains procedural information and scripts for the analysis of 
 
 - [ENA sample template example for one crop](https://github.com/paytonyau/agmicrobiomebase/blob/main/amplicon-sequence-analysis/Fastq_checklist_mapping/Checklist_GSC-MIxS_16Samplicons_OR_TESTv1.tsv)
 
-- ENA fastq template example for one crop
 
 - [ENA ERS output exmaple file for one crop](https://github.com/paytonyau/agmicrobiomebase/blob/main/amplicon-sequence-analysis/Fastq_checklist_mapping/Webin-accessions-2023-12-07T15_42_52.222Z.txt)
 
@@ -69,23 +52,8 @@ This repository contains procedural information and scripts for the analysis of 
 
 - [README.md](https://github.com/paytonyau/agmicrobiomebase/blob/main/amplicon-sequence-analysis/Fastq_checklist_mapping/README.md)
 
-#### 4. **Pre-processing of metagenomic sequence data**
 
-- procedure.md
-
-- scripts
-
-- README.md
-
-#### 5. Preparation and mapping of **metagenomic sequence data for submission to ENA using standard templates** for intercative submission via the WebinPortal ([https://www.ebi.ac.uk/ena/submit/webin/login](https://www.ebi.ac.uk/ena/submit/webin/login))
-
-- procedure.md
-
-- scripts
-
-- README.md
-
-#### 6. Processing and data visualisation of **amplicon sequence data for 3 case studies** in the Crop Microbiome Cryobank Publication 1
+#### 4. Processing and data visualisation of **amplicon sequence data for 3 case studies** in the Crop Microbiome Cryobank Publication 1
 
 **i**. Optimisation/Batch effects corrections
 - [procedure.R markdown - merged length distribution & reference databases](https://github.com/paytonyau/agmicrobiomebase/blob/main/publications-scripts/How-to-paper/case_00-preparation/case00A-length_dist_ref_databases.Rmd)
